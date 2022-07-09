@@ -1,0 +1,16 @@
+D:\Home\dev2022\Ssyp2022\Ssyp2022\bin\Debug\net5.0\Ssyp2022.exe
+D:\Home\dev2022\Ssyp2022\Ssyp2022\bin\Debug\net5.0\Ssyp2022.deps.json
+D:\Home\dev2022\Ssyp2022\Ssyp2022\bin\Debug\net5.0\Ssyp2022.runtimeconfig.json
+D:\Home\dev2022\Ssyp2022\Ssyp2022\bin\Debug\net5.0\Ssyp2022.runtimeconfig.dev.json
+D:\Home\dev2022\Ssyp2022\Ssyp2022\bin\Debug\net5.0\Ssyp2022.dll
+D:\Home\dev2022\Ssyp2022\Ssyp2022\bin\Debug\net5.0\ref\Ssyp2022.dll
+D:\Home\dev2022\Ssyp2022\Ssyp2022\bin\Debug\net5.0\Ssyp2022.pdb
+D:\Home\dev2022\Ssyp2022\Ssyp2022\obj\Debug\net5.0\Ssyp2022.csproj.AssemblyReference.cache
+D:\Home\dev2022\Ssyp2022\Ssyp2022\obj\Debug\net5.0\Ssyp2022.GeneratedMSBuildEditorConfig.editorconfig
+D:\Home\dev2022\Ssyp2022\Ssyp2022\obj\Debug\net5.0\Ssyp2022.AssemblyInfoInputs.cache
+D:\Home\dev2022\Ssyp2022\Ssyp2022\obj\Debug\net5.0\Ssyp2022.AssemblyInfo.cs
+D:\Home\dev2022\Ssyp2022\Ssyp2022\obj\Debug\net5.0\Ssyp2022.csproj.CoreCompileInputs.cache
+D:\Home\dev2022\Ssyp2022\Ssyp2022\obj\Debug\net5.0\Ssyp2022.dll
+D:\Home\dev2022\Ssyp2022\Ssyp2022\obj\Debug\net5.0\ref\Ssyp2022.dll
+D:\Home\dev2022\Ssyp2022\Ssyp2022\obj\Debug\net5.0\Ssyp2022.pdb
+D:\Home\dev2022\Ssyp2022\Ssyp2022\obj\Debug\net5.0\Ssyp2022.genruntimeconfig.cache
