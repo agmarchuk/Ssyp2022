@@ -1,0 +1,29 @@
+﻿@page "/"
+
+<div style="border: 1px solid black;">
+    <div style="display: inline-block; float: left; height:300px; width:60%; border: 1px solid black;">
+        @(left_panel_text)
+    </div>
+    <div style="display: inline-block; float: right; height: 300px; width: 40%; border: 1px solid black;">
+        <div>@(ivanov.name)</div>
+        <div>@(ivanov.from_city)</div>
+        <div><img src="@(ivanov.uri)" height="200" /></div>
+    </div>
+</div>
+<div style="border: 1px solid black;">
+    Это нижняя панель
+</div>
+
+@code{
+    string left_panel_text = @"Класс компонента обычно записывается в виде страницы разметки Razor с расширением файла .razor.
+Компоненты в Blazor обычно называются Blazor (или Razor).";
+
+    class Person
+    {
+        public string name;
+        public string from_city;
+        public string uri;
+    }
+    Person ivanov = new Person() { name = "Иванов Иван Иванович", from_city = "Novosibirsk", uri = "/images/test-photo.jpg" };
+
+}
