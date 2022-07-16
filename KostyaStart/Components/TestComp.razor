@@ -1,0 +1,21 @@
+﻿<div style="border: 1px solid black;">
+    <div>@("полученный текст: " + inputtext)</div>
+    <button @onclick="Doit">считать число слов</button>
+    @if (nwords != -1)
+    {
+        <h1>@(nwords)</h1>
+    }
+</div>
+
+@code {
+    [Parameter] public string inputtext { get; set; }
+    [Parameter]
+    public EventCallback handler { get; set; }
+
+    private int nwords = -1;
+    private void Doit()
+    {
+        nwords = inputtext.Split(' ').Count();
+        handler.InvokeAsync(nwords);
+    }
+}

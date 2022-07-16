@@ -1,71 +1,14 @@
 ﻿@page "/"
+<h3>Index</h3>
+<KostyaStart.Components.TestComp inputtext="Внешний тест для компонета TextComp"
+                                 handler="(n) => UseResult((int)n)" />
+<h1>Полученный результат: @(result)</h1>
 
-<div style="border: 1px solid black;">
-    <div style="display: inline-block; float: left; height:300px; width:40%; border: 1px solid black;">
-        @*@(left_panel_text)*@
-        <div><input placeholder="заголовок" @bind="snews.header"/></div>
-        <div><textarea placeholder="text" @bind="snews.content" /></div>
-        <div><button @onclick="ClickOk">OK</button></div>
-    </div>
-    <div style="display: inline-block; float: right; height: 300px; width: 60%; border: 1px solid black;">
-        @*<div>@(ivanov.name)</div>
-        <div>@(ivanov.birth)</div>
-        <div><img src="@(ivanov.uri)" height="200" /></div>*@
-        <h3>@(snews.header)</h3>
-        <div>@(snews.content)</div>
-    </div>
-</div>
-<div style="border: 1px solid black;">
-    @*@{ 
-        Person[] my_friends = new Person[]
-        {
-            new Person { name = "Иванов", birth = "2008" },
-            new Person { name = "Петров", birth = "2002" },
-            new Person { name = "Сидоров", birth = "2003" },
-        };
-        foreach (var p in my_friends)
-        {
-            if (p.name == "Иванов") continue;
-            <div>@(p.name) @(p.birth)</div>
-        }
-    }*@
-    @foreach (var ne in newsflow)
-    {
-    <div>
-        <h3>@(ne.header)</h3>
-        <div>@(ne.content)</div>
-    </div>
-    }
-</div>
+@code {
 
-@code{
-    string left_panel_text = @"Класс компонента обычно записывается в виде страницы разметки Razor с расширением файла .razor.
-Компоненты в Blazor обычно называются Blazor (или Razor).";
-
-    class Person
+    private int result;
+    private void UseResult(int nwrds)
     {
-        public string name;
-        public string birth;
-        public string uri;
+        result = nwrds;
     }
-    Person ivanov = new Person()
-    { name = "Иванов Иван Иванович", birth = "2008", uri = "/images/test-photo.jpg" };
-    class SsypNews
-    {
-        public DateTime dt;
-        public string header;
-        public string content;
-        public string author;
-    }
-    SsypNews snews = new SsypNews
-    {
-        header = "",
-        content = ""
-    };
-    List<SsypNews> newsflow = new List<SsypNews>();
-    void ClickOk()
-    {
-        newsflow.Add(new SsypNews { header = snews.header, content = snews.content }); 
-    }
-
 }
