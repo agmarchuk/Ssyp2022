@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <database connectionstring="uni:D:\Home\data\uni\" />
+
+  <LoadCassette>D:\Home\FactographProjects\test_cass01</LoadCassette>
+
+</config>
