@@ -1,0 +1,13 @@
+D:\Home\PolarDB\Polar.Universal\bin\Debug\netstandard2.0\Polar.Universal.deps.json
+D:\Home\PolarDB\Polar.Universal\bin\Debug\netstandard2.0\Polar.Universal.dll
+D:\Home\PolarDB\Polar.Universal\bin\Debug\netstandard2.0\Polar.Universal.pdb
+D:\Home\PolarDB\Polar.Universal\bin\Debug\netstandard2.0\Polar.DB.dll
+D:\Home\PolarDB\Polar.Universal\bin\Debug\netstandard2.0\Polar.DB.pdb
+D:\Home\PolarDB\Polar.Universal\obj\Debug\netstandard2.0\Polar.Universal.csproj.AssemblyReference.cache
+D:\Home\PolarDB\Polar.Universal\obj\Debug\netstandard2.0\Polar.Universal.GeneratedMSBuildEditorConfig.editorconfig
+D:\Home\PolarDB\Polar.Universal\obj\Debug\netstandard2.0\Polar.Universal.AssemblyInfoInputs.cache
+D:\Home\PolarDB\Polar.Universal\obj\Debug\netstandard2.0\Polar.Universal.AssemblyInfo.cs
+D:\Home\PolarDB\Polar.Universal\obj\Debug\netstandard2.0\Polar.Universal.csproj.CoreCompileInputs.cache
+D:\Home\PolarDB\Polar.Universal\obj\Debug\netstandard2.0\Polar.Universal.csproj.CopyComplete
+D:\Home\PolarDB\Polar.Universal\obj\Debug\netstandard2.0\Polar.Universal.dll
+D:\Home\PolarDB\Polar.Universal\obj\Debug\netstandard2.0\Polar.Universal.pdb

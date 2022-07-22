@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>alexander.g.marchuk</Authors>
+    <Company>iis</Company>
+    <Product>PolarDB</Product>
+    <Description>Kernel library of PolarDB product: polar types, binary and text serialization and deserialization, UniversalSequence</Description>
+    <Version>1.0.7</Version>
+    <PackageLicenseUrl></PackageLicenseUrl>
+    <NeutralLanguage>ru</NeutralLanguage>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="IndexKey32CompImm.cs" />
+    <Compile Remove="IndexKey32Imm.cs" />
+    <Compile Remove="UniversalSequenceComp.cs" />
+    <Compile Remove="UniversalSequenceCompKey32.cs" />
+  </ItemGroup>
+
+</Project>

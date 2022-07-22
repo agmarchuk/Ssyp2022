@@ -1,0 +1,10 @@
+D:\Home\Ssyp2022\Library\Polar.DB\bin\Debug\netcoreapp3.1\Polar.DB.deps.json
+D:\Home\Ssyp2022\Library\Polar.DB\bin\Debug\netcoreapp3.1\Polar.DB.dll
+D:\Home\Ssyp2022\Library\Polar.DB\bin\Debug\netcoreapp3.1\Polar.DB.pdb
+D:\Home\Ssyp2022\Library\Polar.DB\obj\Debug\netcoreapp3.1\Polar.DB.csproj.AssemblyReference.cache
+D:\Home\Ssyp2022\Library\Polar.DB\obj\Debug\netcoreapp3.1\Polar.DB.GeneratedMSBuildEditorConfig.editorconfig
+D:\Home\Ssyp2022\Library\Polar.DB\obj\Debug\netcoreapp3.1\Polar.DB.AssemblyInfoInputs.cache
+D:\Home\Ssyp2022\Library\Polar.DB\obj\Debug\netcoreapp3.1\Polar.DB.AssemblyInfo.cs
+D:\Home\Ssyp2022\Library\Polar.DB\obj\Debug\netcoreapp3.1\Polar.DB.csproj.CoreCompileInputs.cache
+D:\Home\Ssyp2022\Library\Polar.DB\obj\Debug\netcoreapp3.1\Polar.DB.dll
+D:\Home\Ssyp2022\Library\Polar.DB\obj\Debug\netcoreapp3.1\Polar.DB.pdb

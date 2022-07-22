@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<owl:Ontology
+    xmlns:owl ="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf ="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+  <owl:Class rdf:about="person">
+    <rdfs:label xml:lang="ru">Персона</rdfs:label>
+    <dlink rdf:resource="father"/>
+    <direct prop="father" rdf:resource="person"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="father">
+    <rdfs:label xml:lang="ru">отец</rdfs:label>   
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="photo">
+    <rdfs:label xml:lang="ru">Фотография</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="reflection">
+    <rdfs:label xml:lang="ru">Отражение</rdfs:label>
+  </owl:Class>
+
+  <owl:DatatypeProperty rdf:about="name">
+    <rdfs:label xml:lang="ru">имя</rdfs:label>
+    <rdfs:domain rdf:resource="person"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="age">
+    <rdfs:label xml:lang="ru">возраст</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="uri">
+    <rdfs:label xml:lang="ru">файл</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="reflected">
+    <rdfs:label xml:lang="ru">отражаемое</rdfs:label>
+    <rdfs:inverse-label xml:lang="ru">отраж. в документе</rdfs:inverse-label>
+    <rdfs:domain rdf:resource="reflection"/>
+    <rdfs:range rdf:resource="SysObject"/>  
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="indoc">
+    <rdfs:label xml:lang="ru">в документе</rdfs:label>
+    <rdfs:inverse-label xml:lang="ru">отраж. персонаж</rdfs:inverse-label>
+  </owl:ObjectProperty>
+</owl:Ontology>

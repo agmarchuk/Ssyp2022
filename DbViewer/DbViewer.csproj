@@ -4,9 +4,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\DoingFactography\RDFEngine\RDFEngine.csproj" />
-    <ProjectReference Include="..\..\PolarArchiving\src\OAData\OAData.csproj" />
+ <ItemGroup>
+    <ProjectReference Include="..\Library\OAData\OAData.csproj" />
+    <ProjectReference Include="..\Library\RDFEngine\RDFEngine.csproj" />
   </ItemGroup>
-
 </Project>

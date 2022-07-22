@@ -1,16 +1,21 @@
 ﻿@page "/counter"
+@page "/counter/{searchstring}"
 
 <h1>Counter</h1>
 
-<p>Current count: @currentCount</p>
+<p>Current count: @CurrentCount</p>
+<p>Current searchstring: @searchstring </p>
 
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
 @code {
-    private int currentCount = 0;
+    [Parameter]
+    public int CurrentCount { get; set; }
+    [Parameter]
+    public string searchstring { get; set; }
 
     private void IncrementCount()
     {
-        currentCount++;
+        CurrentCount++;
     }
 }

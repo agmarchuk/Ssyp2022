@@ -1,0 +1,10 @@
+D:\Home\PolarDB\src\Polar.DB\bin\Debug\netstandard2.0\Polar.DB.deps.json
+D:\Home\PolarDB\src\Polar.DB\bin\Debug\netstandard2.0\Polar.DB.dll
+D:\Home\PolarDB\src\Polar.DB\bin\Debug\netstandard2.0\Polar.DB.pdb
+D:\Home\PolarDB\src\Polar.DB\obj\Debug\netstandard2.0\Polar.DB.csproj.AssemblyReference.cache
+D:\Home\PolarDB\src\Polar.DB\obj\Debug\netstandard2.0\Polar.DB.GeneratedMSBuildEditorConfig.editorconfig
+D:\Home\PolarDB\src\Polar.DB\obj\Debug\netstandard2.0\Polar.DB.AssemblyInfoInputs.cache
+D:\Home\PolarDB\src\Polar.DB\obj\Debug\netstandard2.0\Polar.DB.AssemblyInfo.cs
+D:\Home\PolarDB\src\Polar.DB\obj\Debug\netstandard2.0\Polar.DB.csproj.CoreCompileInputs.cache
+D:\Home\PolarDB\src\Polar.DB\obj\Debug\netstandard2.0\Polar.DB.dll
+D:\Home\PolarDB\src\Polar.DB\obj\Debug\netstandard2.0\Polar.DB.pdb

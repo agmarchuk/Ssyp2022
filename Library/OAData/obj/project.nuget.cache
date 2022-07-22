@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "JobccbItfQiISXHEQBjvdWz5dCRbu394iv+oYTcP0aU8zeLZJp3KNtzEcN5shnuQKIV3OPwzl77r5QHX/12NiA==",
+  "success": true,
+  "projectFilePath": "D:\\Home\\Ssyp2022\\Library\\OAData\\OAData.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\NSU\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\NSU\\.nuget\\packages\\system.text.encoding.codepages\\6.0.0\\system.text.encoding.codepages.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

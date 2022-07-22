@@ -49,7 +49,9 @@ namespace DbViewer
             app.UseStaticFiles();
 
             OAData.OADB.Init(env.ContentRootPath + "/wwwroot/");
+            // new RDFEngine.ROntology(path + "ontology_iis-v13.xml");
             var xels = OAData.OADB.SearchByName("Shuma").ToArray();
+
 
             app.UseRouting();
 
@@ -57,7 +59,10 @@ namespace DbViewer
             {
                 endpoints.MapBlazorHub();
                 endpoints.MapFallbackToPage("/_Host");
-            });
+                endpoints.MapControllerRoute(
+                   name: "default",
+                   pattern: "{controller=Home}/{action=Index}/{id?}");
+                            });
         }
     }
 }

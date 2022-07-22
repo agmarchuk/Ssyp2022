@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "4DBGRGt44nbyGMjiIE/QPlC9fhH23J03zfnnWhCuCKiyUX0XBgrrzABOH+8mjPFkaYMxgLzukxoqMwHR3jNDpg==",
+  "success": true,
+  "projectFilePath": "D:\\Home\\Ssyp2022\\Library\\RDFEngine\\RDFEngine.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\NSU\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\NSU\\.nuget\\packages\\system.text.encoding.codepages\\6.0.0\\system.text.encoding.codepages.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

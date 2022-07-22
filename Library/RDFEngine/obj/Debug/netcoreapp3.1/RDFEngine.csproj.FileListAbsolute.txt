@@ -1,0 +1,17 @@
+D:\Home\Ssyp2022\Library\RDFEngine\obj\Debug\netcoreapp3.1\RDFEngine.csproj.AssemblyReference.cache
+D:\Home\Ssyp2022\Library\RDFEngine\obj\Debug\netcoreapp3.1\RDFEngine.GeneratedMSBuildEditorConfig.editorconfig
+D:\Home\Ssyp2022\Library\RDFEngine\obj\Debug\netcoreapp3.1\RDFEngine.AssemblyInfoInputs.cache
+D:\Home\Ssyp2022\Library\RDFEngine\obj\Debug\netcoreapp3.1\RDFEngine.AssemblyInfo.cs
+D:\Home\Ssyp2022\Library\RDFEngine\obj\Debug\netcoreapp3.1\RDFEngine.csproj.CoreCompileInputs.cache
+D:\Home\Ssyp2022\Library\RDFEngine\bin\Debug\netcoreapp3.1\RDFEngine.deps.json
+D:\Home\Ssyp2022\Library\RDFEngine\bin\Debug\netcoreapp3.1\RDFEngine.dll
+D:\Home\Ssyp2022\Library\RDFEngine\bin\Debug\netcoreapp3.1\RDFEngine.pdb
+D:\Home\Ssyp2022\Library\RDFEngine\bin\Debug\netcoreapp3.1\OAData.dll
+D:\Home\Ssyp2022\Library\RDFEngine\bin\Debug\netcoreapp3.1\Polar.DB.dll
+D:\Home\Ssyp2022\Library\RDFEngine\bin\Debug\netcoreapp3.1\Polar.Universal.dll
+D:\Home\Ssyp2022\Library\RDFEngine\bin\Debug\netcoreapp3.1\OAData.pdb
+D:\Home\Ssyp2022\Library\RDFEngine\bin\Debug\netcoreapp3.1\Polar.DB.pdb
+D:\Home\Ssyp2022\Library\RDFEngine\bin\Debug\netcoreapp3.1\Polar.Universal.pdb
+D:\Home\Ssyp2022\Library\RDFEngine\obj\Debug\netcoreapp3.1\RDFEngine.csproj.CopyComplete
+D:\Home\Ssyp2022\Library\RDFEngine\obj\Debug\netcoreapp3.1\RDFEngine.dll
+D:\Home\Ssyp2022\Library\RDFEngine\obj\Debug\netcoreapp3.1\RDFEngine.pdb

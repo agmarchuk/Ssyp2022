@@ -1,7 +1,44 @@
 ﻿@page "/"
+@page "/view"
+@page "/view/{entityId}"
 
-<h1>Hello, world!</h1>
+<h1>Визуализация базы данных</h1>
+<h2>Поиск по имени</h2>
+<input @bind="searchstring" />
+@if (!string.IsNullOrEmpty(searchstring))
+{
+    var items = OAData.OADB.SearchByName(searchstring);
+    @*foreach (var item in items)
+        {
+            <pre>@(item.ToString())</pre>
+        }*@
+    var records = (new RDFEngine.RXEngine()).RSearch(searchstring);
+    foreach (var rec in records)
+    {
+        <div>@(rec.Tp) <a href="/view/@(rec.Id)"> @(rec.GetName()) </a></div>
+    }
+}
+@if (entityId != null)
+{
+    RDFEngine.RRecord rec = (new RDFEngine.RXEngine()).GetRRecord(entityId);
+    <div>@(rec.Tp)</div>
+    <div> <a href="/view/@(rec.Id)"> @(rec.GetName()) </a> </div>
+    @if (rec.Tp == "http://fogid.net/o/photo-doc")
+    {
+        string url = "/docs/GetImage?s=medium&u=" + rec.GetField("http://fogid.net/o/uri");
+        <img src="@url"/>
+    }
+}
 
-Welcome to your new app.
+@code{
+    [Parameter]
+    public string entityId { get; set; }
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+    private string searchstring;
+    public override Task SetParametersAsync(ParameterView parameters)
+    {
+        return base.SetParametersAsync(parameters);
+        //var query = parameters.GetValueOrDefault("")
+    }
+}
+

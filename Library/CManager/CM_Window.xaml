@@ -1,0 +1,100 @@
+﻿<Window x:Class="CManager.CM_Window"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:CManager"
+    Title="Window1" Height="420" Width="680">
+    <Window.Resources>
+        <local:RDFDocs x:Key="RDFDocList"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="24" />
+            <RowDefinition />
+            <RowDefinition Height="23" />
+        </Grid.RowDefinitions>        
+        <Menu Height="22" Margin="0,0,0,0" Name="menu1" VerticalAlignment="Top">
+            <MenuItem Header="File">
+                <MenuItem Name="commandLoad"  Header="Open" Click="commandLoad_Click" />
+                <MenuItem Name="commandCreate" Header="Create" Click="commandCreate_Click" />
+                <Separator />
+                <MenuItem Name="commandExit" Header="Exit" Click="command_Exit" />
+            </MenuItem>
+            <MenuItem Name="commandMakeVideo" Header="Video" Click="command_MakeVideo"/>
+            <MenuItem Header="Build">
+                <MenuItem Header="Photo Previews" Click="MenuBuildPhotoPreviews_Click" />
+                <MenuItem Header="Video Previews" Click="MenuBuildVideoPreviews_Click" />
+                <MenuItem Header="Recalc Doc Types" Click="MenuRecalcDocTypes_Click" />
+                <MenuItem Header="Special" Click="MenuSpecial_Click" />
+                <MenuItem Header="Приписать архиву" Click="MenuLinkToArchive_Click" />
+            </MenuItem>
+        </Menu>
+        <StatusBar Grid.Row="2" Name="statusBar1" Height="26">
+            <TextBlock Name="debugField"  Text="Отладочные тексты"/>
+            <Button Name="cancelReceive">Cancel</Button>
+            <ProgressBar Name="progressBar"  Width="100"/>
+        </StatusBar>
+        <TabControl Grid.Row="1">
+            <TabItem Header="Documents">
+                <Grid Margin="0,0,0,0" Name="grid1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150" />
+                        <ColumnDefinition Width="240*" />
+                    </Grid.ColumnDefinitions>
+                    <GridSplitter Background="LightGray" Width="5" Margin="0,0,0,0" />
+                    <ScrollViewer Grid.Column="0" Margin="0,0,5,0" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+                        <TreeView Margin="0,0,0,0" Name="treeView1" SelectedItemChanged="treeView1_SelectedItemChanged" AllowDrop="True"  PreviewDragOver="ehDragOver" PreviewDrop="ehDrop"/>
+                    </ScrollViewer>
+                    <!--ScrollViewer Grid.Column="1" VerticalScrollBarVisibility="Auto">
+                <WrapPanel Grid.Column="1" Margin="0,0,0,0" Name="wrapPanel1" />
+            </ScrollViewer-->
+                    <Grid Name="panelForList" Grid.Column="1" Margin="0,0,0,0">
+                        <ToolBar Grid.Row="0" Height="26" Margin="0,0,0,0" Name="toolBar1" VerticalAlignment="Top">
+                            <Button Name="runOriginal">Оригинал</Button>
+                            <Button Name="rotateCW"/>
+                            <Button Name="rotateCCW"/>
+                            <Button Name="startVideo">Start</Button>
+                            <Button Name="stopVideo">Stop</Button>
+                            <Button Name="pauseVideo">Pause</Button>
+                            <Button Name="changeOriginal"/>
+                            <Button Name="makeDeepZoom"/>
+                            <Separator Name="StartMenuCollection"/>
+                            <!-- После сепаратора кнопки будут вычисляться динамически -->
+                        </ToolBar>
+                        <ListBox Grid.Column="1" Name="wrapPanel1" Margin="0,26,0,0" AllowDrop="True" PreviewDragOver="ehDragOver" PreviewDrop="ehDrop">
+                            <ListBox.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel Width="{Binding Path=ActualWidth, ElementName=wrapPanel1, Mode=Default}" Margin="-5,0,-5,0">
+                                        <!--WrapPanel.Width>
+                                    <Binding ElementName="panelForList" Path="Width"/>
+                                </WrapPanel.Width-->
+                                    </WrapPanel>
+                                </ItemsPanelTemplate>
+                            </ListBox.ItemsPanel>
+                        </ListBox>
+                        <StackPanel Name="itemViewPanel" Margin="0,26,0,0">
+                            <Image Name="imageView1"/>
+                            <MediaElement Name="mediaElement1" Visibility="Collapsed" />
+                        </StackPanel>
+                        <!--Image Name="imageView" Stretch="Fill" /-->
+                    </Grid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Users">
+                <StackPanel>
+                    <ListView Name="listView1" ItemsSource="{Binding Source={StaticResource RDFDocList}}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Fog document" Width="150" DisplayMemberBinding="{Binding Path=Uri}"/>
+                                <GridViewColumn Header="Owner" Width="Auto" DisplayMemberBinding="{Binding Path=Owner}"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Content="Новый RDF-документ" Width="150" Click="newRDFdoc_Click"/>
+                        <TextBox Width="250" Name="owner"/>
+                    </StackPanel>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

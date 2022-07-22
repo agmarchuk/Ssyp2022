@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Polar.Universal/1.0.0": {
+        "dependencies": {
+          "Polar.DB": "1.0.7"
+        },
+        "runtime": {
+          "Polar.Universal.dll": {}
+        }
+      },
+      "Polar.DB/1.0.7": {
+        "runtime": {
+          "Polar.DB.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Polar.Universal/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Polar.DB/1.0.7": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

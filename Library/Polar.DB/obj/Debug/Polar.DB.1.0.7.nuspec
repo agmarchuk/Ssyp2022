@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Polar.DB</id>
+    <version>1.0.7</version>
+    <authors>alexander.g.marchuk</authors>
+    <description>Kernel library of PolarDB product: polar types, binary and text serialization and deserialization, UniversalSequence</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\Home\Ssyp2022\Library\Polar.DB\bin\Debug\netcoreapp3.1\Polar.DB.dll" target="lib\netcoreapp3.1\Polar.DB.dll" />
+  </files>
+</package>
